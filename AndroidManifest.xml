@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.unr.cse.paintmobile3d.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="edu.unr.cse.paintmobile3d.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.unr.cse.paintmobile3d.MainActivity" />
+        </activity>
     </application>
-
+	
 </manifest>
