@@ -5,7 +5,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="selected_color_name">Seleted Color</string>
-    <string name="title_activity_settings">pm3D Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main">pm<b>3D</b></string>
     
     <string name="pref_application">Application</string>
     <string name="pref_about">About</string>

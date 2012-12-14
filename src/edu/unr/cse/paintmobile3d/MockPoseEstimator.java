@@ -51,7 +51,12 @@ public class MockPoseEstimator extends PoseEstimator {
 				}
 				
 				// Wait for a 60th of a second
-				Thread.sleep(33);
+				try {
+					Thread.sleep(33);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		}
 	}
