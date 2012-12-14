@@ -4,5 +4,6 @@
     <string name="app_name">PaintMobile3D</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="selected_color_name">Seleted Color</string>
 
 </resources>
