@@ -2,11 +2,16 @@ package edu.unr.cse.paintmobile3d;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
+	
+	final Context context = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +32,36 @@ public class MainActivity extends Activity {
 	  public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
 	    case R.id.item1:
-	    	//Pop-up menu for save, load, clear, share links
+
+			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+				context);
+ 
+			// set title
+			alertDialogBuilder.setTitle("Save drawing");
+ 
+			// set dialog message
+			alertDialogBuilder
+				.setMessage("Do you want to save the current screen?")
+				.setCancelable(false)
+				.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog,int id) {
+						//Does nothing for now
+						dialog.cancel();
+					}
+				  })
+				.setPositiveButton("No",new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog,int id) {
+						// if this button is clicked, just close
+						// the dialog box and do nothing
+						dialog.cancel();
+					}
+				});
+ 
+				// create alert dialog
+				AlertDialog alertDialog = alertDialogBuilder.create();
+ 
+				// show it
+				alertDialog.show();
 	      break;
 	    case R.id.item2:
 	        //Color picker
