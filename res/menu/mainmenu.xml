@@ -1,0 +1,6 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@+id/item1" android:title="Extras" android:showAsAction="ifRoom"></item>
+        <item android:id="@+id/item2" android:title="Eyedrop" android:showAsAction="ifRoom" android:icon="@android:drawable/ic_menu_edit"></item>
+        <item android:id="@+id/item3" android:title="Settings" android:showAsAction="ifRoom" android:icon="@android:drawable/ic_menu_manage"></item>
+    </menu>

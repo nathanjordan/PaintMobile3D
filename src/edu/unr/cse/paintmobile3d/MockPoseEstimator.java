@@ -49,6 +49,9 @@ public class MockPoseEstimator extends PoseEstimator {
 					subscription.orientations.add(orientation);
 					subscription.positions.add(position);
 				}
+				
+				// Wait for a 60th of a second
+				Thread.sleep(33);
 			}
 		}
 	}
