@@ -19,15 +19,15 @@ public class ColorsDialog extends DialogFragment {
         
         builder.setView(inflater.inflate(R.layout.dialog_colors, null));
         
-        builder.setMessage("Fire Missiles?")
+        builder.setMessage("Pick Color")
         
-               .setPositiveButton("Fire!", new DialogInterface.OnClickListener() {
+               .setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                        // FIRE ZE MISSILES!
                    }
                })
                
-               .setNegativeButton("Nope", new DialogInterface.OnClickListener() {
+               .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                        // User cancelled the dialog
                    }

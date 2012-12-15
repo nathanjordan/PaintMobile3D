@@ -3,9 +3,20 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     
-    <edu.unr.cse.paintmobile3d.ColorPicker
+    <!--<edu.unr.cse.paintmobile3d.ColorPicker
         android:id="@+id/picker"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1" />-->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/colorpicker" />
+
 </LinearLayout>

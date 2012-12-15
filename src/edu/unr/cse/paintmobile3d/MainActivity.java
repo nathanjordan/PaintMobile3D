@@ -70,7 +70,8 @@ public class MainActivity extends Activity {
 	    case R.id.item2:
 	    	FragmentTransaction ft = getFragmentManager().beginTransaction();
 	    	DialogFragment newFragment = new ColorsDialog();
-	        newFragment.show(ft, "missiles");
+	        newFragment.show(ft, "Pick Color");
+	    	
 	      break;
 	    case R.id.item3:
 	      startActivity(new Intent(this, SettingsActivity.class));
