@@ -44,7 +44,7 @@ public class SettingsActivity extends PreferenceActivity {
     	 
     				// set dialog message
     				alertDialogBuilder
-    					.setMessage("Nathan Jordan\nThomas Kelly\nHalim Cagri Ates")
+    					.setMessage("Nathan Jordan\n\nThomas Kelly\n\nHalim Cagri Ates")
     					.setCancelable(false)
     					.setPositiveButton("OK",new DialogInterface.OnClickListener() {
     						public void onClick(DialogInterface dialog,int id) {
