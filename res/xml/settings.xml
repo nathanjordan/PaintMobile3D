@@ -19,11 +19,11 @@
     
     <PreferenceCategory android:title="@string/pref_about" >
         <Preference 
-            android:title="@string/pref_title_dev_info" />
+            android:title="@string/pref_title_dev_info"
+            android:key="setting_dev_info" />
         <Preference 
             android:title="@string/pref_title_github" 
             android:key="setting_github" />	
-        />
     </PreferenceCategory>
 
 </PreferenceScreen>
