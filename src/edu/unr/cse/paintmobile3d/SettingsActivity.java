@@ -19,9 +19,11 @@ public class SettingsActivity extends PreferenceActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		//Load settings page elements from xml file
 		super.onCreate(savedInstanceState);
 		addPreferencesFromResource(R.xml.settings);
 		
+		//If GitHub link is tapped, go to the repository website
 		Preference mypref = (Preference) findPreference("setting_github");
         mypref.setOnPreferenceClickListener(new OnPreferenceClickListener() {
         	@Override
@@ -32,6 +34,7 @@ public class SettingsActivity extends PreferenceActivity {
 			}
         });
         
+        //If Developer Info is clicked, show dev info dialog
 		Preference mypref2 = (Preference) findPreference("setting_dev_info");
         mypref2.setOnPreferenceClickListener(new OnPreferenceClickListener() {
         	@Override

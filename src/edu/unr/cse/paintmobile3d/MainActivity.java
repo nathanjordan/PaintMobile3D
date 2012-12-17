@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
 	  @Override
 	  public boolean onOptionsItemSelected(MenuItem item) {
 	    switch (item.getItemId()) {
-	    case R.id.item1:
+	    case R.id.item1: //Save drawing button
 
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
 				context);
@@ -49,6 +49,7 @@ public class MainActivity extends Activity {
 				.setCancelable(false)
 				.setNegativeButton("Yes",new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,int id) {
+						//Should save the drawing
 						//Does nothing for now
 						dialog.cancel();
 					}
@@ -67,13 +68,13 @@ public class MainActivity extends Activity {
 				// show it
 				alertDialog.show();
 	      break;
-	    case R.id.item2:
+	    case R.id.item2:  //Pick color button
 	    	FragmentTransaction ft = getFragmentManager().beginTransaction();
 	    	DialogFragment newFragment = new ColorsDialog();
 	        newFragment.show(ft, "Pick Color");
 	    	
 	      break;
-	    case R.id.item3:
+	    case R.id.item3:  //Settings button
 	      startActivity(new Intent(this, SettingsActivity.class));
 	      break;
 
